@@ -177,12 +177,12 @@
             const mouseY = e.clientY - centerY;
             
             // Calculate rotation angles based on mouse position (smaller values for subtlety)
-            const rotateX = (mouseY / window.innerHeight) * -20; // Max 20 degrees
-            const rotateY = (mouseX / window.innerWidth) * 20;   // Max 20 degrees
+            const rotateX = (mouseY / window.innerHeight) * -40; // Max 20 degrees
+            const rotateY = (mouseX / window.innerWidth) * 40;   // Max 20 degrees
             
             // Calculate translation based on mouse position
-            const translateX = (mouseX / window.innerWidth) * 25; // Max 25px movement
-            const translateY = (mouseY / window.innerHeight) * 25; // Max 25px movement
+            const translateX = (mouseX / window.innerWidth) * 50; // Max 25px movement
+            const translateY = (mouseY / window.innerHeight) * 50; // Max 25px movement
             
             // Apply 3D transform with both rotation and translation
             container.style.transform = `
